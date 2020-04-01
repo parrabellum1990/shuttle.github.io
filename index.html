@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="font/font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>project06</title>
+</head>
+
+<body>
+  <!-- Очки и уолвень игры -->
+  <header class="header">
+    <div class="score">
+      <div class="score__title modify__text">score</div>
+      <div id="score__number" class="score__number modify__text"></div>
+    </div>
+    <div class="level">
+      <div class="level__title modify__text">level</div>
+      <div class="level__number modify__text">0</div>
+    </div>
+    <div class="radar">
+      <img class="radar__img" src="img/gps-img.png" alt="gps">
+      <span class="radar__block-style radar__block1 radar__block-clear"></span>
+      <span class="radar__block-style radar__block2 radar__block-clear"></span>
+      <span class="radar__block-style radar__block3 radar__block-clear"></span>
+      <span class="radar__block-style radar__block4 radar__block-clear"></span>
+      <span class="radar__block-style radar__block5 radar__block-clear"></span>
+    </div>
+  </header>
+  <!-- ОСНОВНОЕ ИГРОВОЕ ПОЛЕ -->
+  <main id="map" class="map">
+  </main>
+  <!-- Подсказки для поиска -->
+  <footer class="footer">
+    <div class="prompt">
+      <div id="prompt__title" class="prompt__title modify__text">Intuition</div>
+    </div>
+  </footer>
+  <!-- modal window -->
+  <div id="info-modal" class="info-modal">
+    <p class="info-modal__text">
+      lets play thats beautiful game
+    </p>
+    <button id="btn-play" class="info-modal__play">Play!</button>
+  </div>
+  <!-- curtain -->
+  <div id="curtain" class="curtain"></div>
+  <audio id="sound-shot" src="sound/shot.mp3"></audio>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
