@@ -71,7 +71,7 @@ header {
 /* MAIN/ */
 /* MAP */
 .map {
-  height: calc(100vh - 88px);
+  height: calc(100vh - 120px);
 }
 
 /* INFO MODAL window */
@@ -115,4 +115,55 @@ header {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 720px) {
+  /* MAIN/ */
+  /* MAP */
+  .map {
+    height: calc(100vh - 120px);
+  }
+  /* TEXT */
+  .modify__text {
+    font-size: 18px;
+  }
+  /* SCORE */
+  .score {
+    align-items: flex-end;
+  }
+  /* Hide LEVEL */
+  .level {
+    display: none;
+  }
+  /* RADAR */
+  .radar {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: translate(0, 0);
+  }
+
+  .radar__block-style {
+    margin-left: 5px;
+    border: 2px solid #4deeea;
+    box-shadow: #fff 0px 0px 5px, #fff 0px 0px 10px, #fff 0px 0px 15px, #ff2d95 0px 0px 20px, #ff2d95 0px 0px 30px,
+      #ff2d95 0px 0px 40px, #ff2d95 0px 0px 50px, #ff2d95 0px 0px 75px;
+  }
+  .radar__block1 {
+    padding: 5px 3px 0 3px;
+  }
+  .radar__block2 {
+    padding: 10px 3px 0 3px;
+  }
+  .radar__block3 {
+    padding: 15px 3px 0 3px;
+  }
+  .radar__block4 {
+    padding: 20px 3px 0 3px;
+  }
+  .radar__block5 {
+    padding: 25px 3px 0 3px;
+  }
 }
