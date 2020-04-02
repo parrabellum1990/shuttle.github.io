@@ -42,19 +42,21 @@ $("#btn-play").click(function (e) {
   console.log("targetWidth = " + targetWidth);
   console.log("targetHeight = " + targetHeight);
   if (level === 1) {
-    $("body").css("background", "url(../img/bkg-1.jpg) no-repeat, top / cover");
+    $("body").css("background", "url(img/bkg-1.jpg) no-repeat, top / cover");
   } else {
     if (level === 2) {
-      $("body").css("background", "url(../img/bkg-2.jpg) no-repeat, top / cover");
+      $("body").css("background", "url(img/bkg-2.jpg) no-repeat, top / cover");
     } else {
       if (level === 3 ) {
-        $("body").css("background", "url(../img/bkg-3.jpg) no-repeat, top / cover");
+        $("body").css("background", "url(img/bkg-3.jpg) no-repeat, top / cover");
       } else {
         if (level === 4) {
-          $("body").css("background", "url(../img/bkg-4.jpg) no-repeat, top / cover");
+          $("body").css("background", "url(img/bkg-4.jpg) no-repeat, top / cover");
         } else {
           if (level === 5) {
-            $("body").css("background", "url(../img/bkg-5.jpg) no-repeat, top / cover");
+            $("body").css("background", "url(img/bkg-5.jpg) no-repeat, top / cover");
+          } else {
+            $("body").css("background", "url(img/bkg-0.jpg) no-repeat, top / cover");
           }
         }
       }
